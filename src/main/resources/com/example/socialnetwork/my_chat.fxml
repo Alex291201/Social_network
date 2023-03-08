@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" fx:controller="com.example.socialnetwork.MyChat">
+    <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+    <HBox spacing="10" alignment="TOP_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <Button text ="Back" onAction="#back"/>
+    </HBox>
+    <HBox spacing="10" alignment="TOP_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <Button text ="Refresh" onAction="#refresh"/>
+    </HBox>
+    <TextArea fx:id = "Chat_box" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id = "Message"
+              GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+    <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <Button text="Send" onAction="#send"/> </HBox>
+</GridPane>

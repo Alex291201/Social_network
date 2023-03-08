@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" fx:controller="com.example.socialnetwork.Register">
+    <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+    <Text text="Register "
+          GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+    <Label text="User Name:"
+           GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField  fx:id = "username"
+            GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Label text="First Name:"
+           GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField  fx:id = "first_name"
+            GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Label text="Last Name:"
+           GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField  fx:id = "last_name"
+            GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Label text="Password:"
+           GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <PasswordField fx:id = "pass" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Label text="Confirm Password:"
+           GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <PasswordField fx:id = "pass2" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    <Label text="Email:"
+           GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <TextField fx:id = "email"
+            GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+    <HBox spacing="10" alignment="bottom_left" GridPane.columnIndex="0" GridPane.rowIndex="8">
+        <Button text="Back" onAction="#back"/> </HBox>
+    <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="8">
+        <Button text="Submit" onAction="#submit"/> </HBox>
+
+</GridPane>

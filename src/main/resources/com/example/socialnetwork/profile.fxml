@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" fx:controller="com.example.socialnetwork.Profile">
+    <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+    <Text fx:id = "current_user"
+          GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+    <ListView fx:id = "Friend_list"
+           GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Label text = "Friend's username"
+           GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <TextField fx:id = "Friend_user"
+               GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <HBox spacing="10" alignment="bottom_left" GridPane.columnIndex="0" GridPane.rowIndex="8">
+    <Button text = "Send friend request" onAction="#sendre"/></HBox>
+    <HBox spacing="10" alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Button text ="See requests" onAction="#next"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER_LEFT" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <Button text ="See sent requests" onAction="#next2"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="BOTTOM_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <Button text ="Delete" onAction="#del"/>
+    </HBox>
+    <HBox spacing="10" alignment="BOTTOM_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Button text ="Chat" onAction="#chat"/>
+    </HBox>
+</GridPane>

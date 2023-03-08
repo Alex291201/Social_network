@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" fx:controller="com.example.socialnetwork.MyFriendRequest">
+    <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+    <HBox spacing="10" alignment="TOP_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <Button text ="Back" onAction="#back"/>
+    </HBox>
+    <ListView fx:id = "Request_list"
+              GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <HBox spacing="10" alignment="bottom_left" GridPane.columnIndex="0" GridPane.rowIndex="8">
+        <Button text="Accept" onAction="#accept"/> </HBox>
+    <HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1" GridPane.rowIndex="8">
+        <Button text="Decline" onAction="#decline"/> </HBox>
+</GridPane>
